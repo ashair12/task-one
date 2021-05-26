@@ -4,6 +4,32 @@
     <meta charset="utf-8">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <style>
+      input{
+        height:20px;
+      }
+      input[type="username"]::placeholder
+      {
+        text-align:right;
+      }
+      select[type="gender"]
+      {
+        width:440px;
+        height:32px;
+      }
+      select[type="month"]
+      {
+        width:130px;
+        height:32px;
+      }
+      input[type="day"]
+      {
+        width:120px;
+      }
+      input[type="year"]
+      {
+        width:130px;
+      }
+      a {text-decoration: none;}
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
       </style>                                             
     <title>Create your Google Account</title>
@@ -15,17 +41,14 @@
         <h1>One account is all you need</h1>
         <h2>One free accounts gets you into everything Google.</h2>
         <br>
-        <p><img src="images/google1.PNG" width="400" height="40" class="center"></p>
+        <p><img src="images/google1.PNG"  class="center"></p>
         <br>
         <br>
         <br>
         <h1>Take it all with you</h1>
         <h2>Switch between devices, and pick up where you left off</h2>
-        <p><img src="images/google2.PNG" width="300" height="200" class="center"></p>
-
+        <p><img src="images/google2.PNG"  class="center"></p>
       </div>
-
-
 
     <div class="col2">
     <div class="survey">
@@ -34,6 +57,7 @@
       <div class="two-col">
         <div class="col1">
             <label for="field1"><b>Name</b></label>
+            <br> 
             <input type="text" name="firstname" placeholder = "First"><br>
         </div>
 
@@ -43,47 +67,105 @@
         </div>
     </div>
       
-      <div class="question">
-
       <br>
-      <b>Choose your username</b> <br>
-      <input type="text" name="username" placeholder = "@gmail.com" style="width: 300px"><br>
+      <br>
+      <br>
+      <br>
+      <b>Choose your username</b> 
+      <br>
+      <input type="username" name="username" placeholder = "@gmail.com" style="width: 430px">
+      <br>
+      <a href="https://www.google.com/"> I prefer to use my current email address</a>
+      <br>
+      <br>
 
-        
-      </div>
-      
-     <!-- Checkbox: --> 
-      <div class="question">
-        <b>I like:</b> <br>
-      <input type="checkbox" name="The Layout" value="The Layout">The Layout<br>
-      <input type="checkbox" name="The Colour Scheme" value="The Colour Scheme">The Colour Scheme<br>
-      <input type="checkbox" name="The Scoreboard" value="The Scoreboard">The Scoreboard<br>
-      </div>
-      
-      <!-- Dropdown: --> 
-      <div class="question">
-        <b>How would you rate the aesthetics of the website?:</b><br>
-      <select id="favourite">
-        <option value ="Good" selected="selected">Good</option>
-        <option value ="Indifferent">Indifferent</option>
-        <option value ="Bad">Bad</option>
-        </select>
+      <b>Create a password</b> 
+      <br>
+      <input type="password" name="password" style="width: 430px">
+      <br>
+      <br>
+      <b>Confirm your password</b> 
+      <br>
+      <input type="password" name="password" style="width: 430px">
+      <br>
+      <br>
+      <b> Birthday </b>
+      <div class="row">
+        <div class="column">
+          <div class="month-select" style="width: 200px;">
+          <select id="month" type="month">
+            <option value="" disabled selected hidden>Month</option>
+            <option value ="January">January</option>
+            <option value ="February">February</option>
+            <option value ="March">March</option>
+            <option value ="April">April</option>
+            <option value ="May">May</option>
+            <option value ="June">June</option>
+            <option value ="July">July</option>
+            <option value ="August">August</option>
+            <option value ="September">September</option>
+            <option value ="October">October</option>
+            <option value ="November">November</option>
+            <option value ="December">December</option>
+            </select>
+          </div>
         </div>
-     
-    <div class="question">
-      <b>Comments:</b><br>
-        <textarea rows="5" cols="30"> </textarea>
-      <br>
+
+        <div class="column">
+          <input type="day" name="Day" placeholder = "Day" ><br>
+        </div>
+
+        <div class="column">
+          <input type="year" name="Year" placeholder = "Year"><br>
+        </div>
+
       </div>
-      
-      <button id="submitButton" type="buttonm" class="block">
-        <b>Submit</b>
+      <br>
+
+      <b>Gender:</b><br>
+      <div class="location-select" style="width:300px;">
+      <select id="gender" type="gender">
+        <option value="" disabled selected hidden>I am...</option>
+            <option value ="Male">Male</option>
+            <option value ="Female">Female</option>
+            <option value ="Other">Other</option>
+        </select>
+      </div>
+        <br>
+      <b>Mobile Phone</b> 
+      <br>
+      <input type="password" name="password" style="width: 430px">
+      <br>
+      <br>
+      <b>Your current email address</b> 
+      <br>
+      <input type="password" name="password" style="width: 430px">
+      <br>
+      <br>
+      <b>Location</b>
+      <br>
+      <div class="location-select" style="width:300px;">
+      <select id="location" type="gender">
+        <option value="" disabled selected hidden>United Kingdom</option>
+        <option value ="United Kingdom">United Kingdom</option>
+        <option value ="Canada">Canada</option>
+        <option value ="Pakistan">Pakistan</option>
+        <option value ="United States of America">United States of America</option>
+        </select>
+     </div>
+     <br>
+     <br>
+   
+      <button id="submitButton" type="button" class="block">
+        <h4>Next Step</h4>
       </button>
-        
-      <p id="signature"> Site created by Ashair Imran</p>
-      
+      <br>
+      <br>
+
+
     </form>
     </div>
+    <p id="signature"> <a href="https://www.google.com/">Learn more </a>about why we ask for this information</p>
     </div>
   </div>
   </body>
