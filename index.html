@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--
-    <style>
-      a:link{
-        color: #99ff99;
-        background-color: transparent;
-        text-decoration: none;
-      }
-    </style>
-      --> 
     <meta charset="utf-8">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">                                             
-    <title>Survey</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+      </style>                                             
+    <title>Create your Google Account</title>
   </head>
-  
   <body>
-    <h1>User Test Survey</h1>
-    <form id="myform" action="index.php" name="My survey">
-      <br>
-      <h2> This survey is concerned with collecting your thoughts on the UI of the <a href="https://www.nba.com/raptors/?splash=off"> Toronto Raptors official website</a> shown below:</h2>
-      <br>
-      <p><a href="https://www.nba.com/raptors/?splash=off">
-      <img src="images/raptors.PNG" alt="www.nba.com/raptors" width="600" height="337.5">
-      </a></p>
-      <br>
-      <br>
-     
-      <div class="question">
-        <b>Personal Information:</b><br>
+    <h3>Create your Google Account</h3>
+    <div class="two-col-base">
+      <div class="col1">
+        <h1>One account is all you need</h1>
+        <h2>One free accounts gets you into everything Google.</h2>
         <br>
-      First name: <input type="text" name="firstname"><br>
-      <br>
-      Last name: <input type="text" name="lastname"><br>
+        <p><img src="images/google1.PNG" width="400" height="40" class="center"></p>
+        <br>
+        <br>
+        <br>
+        <h1>Take it all with you</h1>
+        <h2>Switch between devices, and pick up where you left off</h2>
+        <p><img src="images/google2.PNG" width="300" height="200" class="center"></p>
+
       </div>
+
+
+
+    <div class="col2">
+    <div class="survey">
+    <form id="myform" action="index.php" name="My survey">
+
+      <div class="two-col">
+        <div class="col1">
+            <label for="field1"><b>Name</b></label>
+            <input type="text" name="firstname" placeholder = "First"><br>
+        </div>
+
+        <div class="col2">
+          <br>
+          <input type="text" name="lastname" placeholder = "Last" ><br>        
+        </div>
+    </div>
       
       <div class="question">
-      <b>Is this the type of website you would visit regularly?:</b> <br>
-        
-      <input type="radio" id="yes" name="q1" value="yes">
-  <label for="yes">Yes</label><br>
-  <input type="radio" id="no" name="q1" value="no">
-  <label for="no">No</label><br>
+
+      <br>
+      <b>Choose your username</b> <br>
+      <input type="text" name="username" placeholder = "@gmail.com" style="width: 300px"><br>
+
         
       </div>
       
@@ -76,5 +83,8 @@
       <p id="signature"> Site created by Ashair Imran</p>
       
     </form>
+    </div>
+    </div>
+  </div>
   </body>
 </html>
